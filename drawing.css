@@ -45,6 +45,7 @@ a:link, :visited{
 h1,a{
     text-align: center;
     color: rgb(121, 160, 160);
+    
 }
 
 .sliding{
@@ -76,26 +77,26 @@ h1,a{
     align-items: center;          
     justify-content: center;      
     
-    animation: slide-it 40s  linear infinite;
+    animation: slide-it 20s  linear infinite;
   }
   
   @keyframes slide-it {
-    100%  { transform: translateX( calc(-200% - 500px) ); }
+    100%  { transform: translateX( calc(-100% - 200px) ); }
   }
 
   /*SKILL BARS*/
   
   .skills{
-    display: inline-block;
+    float:left;
     width: 30%;
-    max-width: 600%;
+    max-width: 100%;
     padding: 0, 20px;
 
 }
 .skills2{
-    float: inline-end;
+    float:right;
     width: 30%;
-    max-width: 600%;
+    max-width: 100%;
     padding: 0, 20px;
 }
 
@@ -227,15 +228,16 @@ h1,a{
 }
 .card__position {
     
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 600%;
-    padding: 30px;
+    max-width: 100%;
+    padding: 100px;
+   
 }
 
 .card__info {
-    display: inline-flexbox;
+    display: inline-flex;
     margin: 5px;
 }
 
@@ -252,3 +254,14 @@ h1,a{
     box-shadow: 10px 10px 10px;
     padding: 10px;
 }
+
+#vid {
+    z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.3;
+  
+  }

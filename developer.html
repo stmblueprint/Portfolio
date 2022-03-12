@@ -1,13 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="drawing.css">
-    
+
+    <style>
+
+        .sectionsbg{
+            background-image: linear-gradient(rgb(233, 183, 183), rgba(201, 169, 185, 0.226), rgba(129, 121, 133, 0.233)); 
+            width: 90%;
+            height: 80%;
+            margin: 10px 50px;                 
+            display: flex;                
+            align-items: left;          
+            justify-content: left;    
+            
+        }
+
+        .sectionsbg1{
+            background-image: linear-gradient(rgb(233, 183, 183), rgba(201, 169, 185, 0.63), rgba(129, 121, 133, 0.521)); 
+            width: 90%;
+            height: 200%;                
+            display: flex;                
+            align-items: left;          
+            justify-content:left;    
+            position: inline;
+            
+        }
+        .sectionsbg2{
+            background-image: linear-gradient(rgb(233, 183, 183), rgba(201, 169, 185, 0.582), rgba(129, 121, 133, 0.418)); 
+            width: 50%;
+            height:70%;  
+                         
+           
+        }
+
+
+
+
+        .logopos{
+            
+            display: flex;                
+            align-items: center;          
+            justify-content: center;   
+            padding: 20;
+            
+        }
+
+        .cappy{
+            text-align: center;
+            color: #e9e9e9;
+            font-size: 26px;
+            padding-top: 60px;
+
+        }
+
+        .para{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: aliceblue;
+           
+        }
+          
+          
+       
+
+
+
+    </style>
+
+
     <title>Designs|Portfolio</title>
 </head>
 <body>
+    <video autoplay muted loop id="vid">
+        <source src="pw/vid.mp4" type="video/mp4">
+      </video>
     <div>
         <div><img src="pw/me1.png" style="border-radius: 100%; filter:contrast(0.7)" width="90" ></div>
         <header>
@@ -21,6 +91,45 @@
         </div>
         <main>
 
+           
+           
+            <section>
+                
+                <div><div class="cappy">[UI Design Flow's]</div>
+                
+                <div> 
+                <img style="display: top;" src="pw/proto1.png"  width="600" height="500">
+                <img  style="display: inline;" src="pw/mockup1.jpeg" height="500" width="500">
+
+                <img  style="display: bottom;" src="pw/proto2.png" height="800" width="500">
+                
+                <img src="pw/mockup2.png" class="sectionsbg2" height="300" width="300">
+            
+            </div>
+                    
+                   
+
+                </div>
+                
+            </div>
+
+            </section>
+
+        
+            <section>
+                <div><div class="cappy">[Logo's]</div>
+                <div class="sectionsbg"> <img src="pw/pwlogo.png" class="logopos" width="200" height="270">
+                <img src="pw/lum.png" class="logopos" width="200" height="190">
+                <img src="pw/hea.png" class="logopos" width="200" height="230" >
+
+                </div>
+                
+            </div>
+
+            </section>
+
+
+
 
 
 
@@ -28,6 +137,7 @@
         </main>
 
 
-    
-</body>
+   
+    </body>
+
 </html>
