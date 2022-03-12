@@ -1,7 +1,7 @@
 # Portfolio
 Website Portfolio
 
+Hosting With AWS
+tullochsportfolio.com
 
-## HOMEPAGE
-![This is an image](pw/home.png)
 
