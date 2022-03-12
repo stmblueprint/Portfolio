@@ -68,7 +68,7 @@ h1,a{
   }
   
   .dj-slide {
-    width: calc(100% - 100px);    /*  added, full width - margin  */
+    width: calc(100% - 200px);    /*  added, full width - margin  */
     flex-shrink: 0;               /*  added, so it won't shrink  */
     margin: 20px 50px;                 
     
@@ -80,7 +80,7 @@ h1,a{
   }
   
   @keyframes slide-it {
-    100%  { transform: translateX( calc(-300% - 300px) ); }
+    100%  { transform: translateX( calc(-200% - 500px) ); }
   }
 
   /*SKILL BARS*/
