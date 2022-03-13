@@ -259,7 +259,7 @@ h1,a{
     padding: 10px;
 }
 
-#vid {
+#vid { /*background vid*/
     z-index: -2;
     position: fixed;
     right: 0;
@@ -269,3 +269,8 @@ h1,a{
     opacity: 0.3;
   
   }
+
+  .log{ /*logos*/
+    padding: 5px;
+    mix-blend-mode: multiply;
+}
