@@ -317,3 +317,10 @@ h1,a{
   @keyframes slide-it2 {
     100%  { transform: translateX( calc(-50% - 500) ); }
   }
+
+  /* scroll view */
+  .container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
