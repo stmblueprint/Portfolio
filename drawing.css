@@ -64,7 +64,7 @@ h1,a{
     display: flex;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    background: rgba(106, 142, 35, 0.096);
+    background: rgba(30, 41, 9, 0.096);
     border: 1px solid black;
   }
   
@@ -292,7 +292,7 @@ h1,a{
     
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    background: rgba(2, 0, 0, 0.925);
+    background: rgb(2, 0, 0);
     width: 100%;
     
     border: 1px solid rgba(0, 0, 0, 0.753);
