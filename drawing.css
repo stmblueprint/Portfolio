@@ -19,10 +19,14 @@ body{
    
     margin: auto;
     padding: 100px;
-    background-image: linear-gradient(to right, rgb(240, 233, 233),rgb(0, 0, 0));
+    background-image: linear-gradient(to right, rgb(150, 167, 189),rgb(216, 152, 152));
     font-family: 'Courier New', Courier, monospace;
     
 }
+/* .h1__heading{
+   color: rgb(58, 160, 190);
+   mix-blend-mode: overlay;
+} */
 
 nav{
     display: inline;
