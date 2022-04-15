@@ -19,7 +19,7 @@ body{
    
     margin: auto;
     padding: 100px;
-    background-image: linear-gradient(to right, rgb(150, 167, 189),rgb(216, 152, 152));
+    background-image: linear-gradient(to right, rgb(226, 212, 212),rgb(180, 129, 129));
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -314,8 +314,8 @@ h1,a{
     
     display: flex;                
     align-items: center;          
-    justify-content: center;      
-    
+    justify-content: center;     
+      
     animation: slide-it 100s  ease-in infinite;
   }
   
