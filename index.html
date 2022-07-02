@@ -108,23 +108,7 @@
         <div>
 
 
-            <?php
             
-            $file = "portfoliovisitors.txt";
-            $VList = file_get_contents($file); // visitor list. A list of vistors 
-            $ip = $_SERVER["REMOTE_ADDR"];
-            $vtime = $_SERVER["REQUEST_TIME"];
-            $mydate = getdate($vtime);
-
-
-            $newVisitor = $ip." ".$mydate["month"]."/".$mydate["mday"]."/".$mydate["year"]." ".
-                        $mydate["hours"].":".$mydate["minutes"].":".$mydate["seconds"]."\n";
-            file_put_contents($file, $newVisitor, FILE_APPEND | LOCK_EX); // specify file_append so the visitors dont get replaced.
-
-            
-            ?>
-
-
 
 
         </div>
