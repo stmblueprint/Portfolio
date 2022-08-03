@@ -19,7 +19,7 @@ body{
    
     margin: auto;
     padding: 100px;
-    /* background-image: linear-gradient(to right, rgb(226, 212, 212),rgb(180, 129, 129)); */
+    /* background-image: linear-gradient(to right, rgba(169, 208, 206, 0.813),rgba(197, 179, 188, 0.753)); */
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -359,7 +359,14 @@ h1,a{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
+.logo-container::-webkit-scrollbar{
+    display: none;
+}
+.logo-container{
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 
   .process-caption {

@@ -8,30 +8,46 @@
     <link rel="stylesheet" href="drawing.css">
     <style>
         
-        .sectionsbg{
-            background-image: linear-gradient(rgb(233, 183, 183), rgba(201, 169, 185, 0.301), rgba(144, 97, 163, 0.445)); 
-            width: 30%;
-            height: 200%;
-            margin: 100px 50px;                 
-            display: flex;                
-            align-items: top;          
-            justify-content: center;    
-            padding-bottom: 80;
+        .table-flow{
+            overflow: hidden;
+            width: 100%;
+
         }
+
         .pads{
-            padding-bottom: 50px;
+            padding-top: 50px;
         }
 
         .titles{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             mix-blend-mode:multiply;
         }
-        .captionz{
-            font-size: large;
-            
-            
-        }
+        .row {
+            min-height: 200px;
+            background-size: cover;
+            display: flex;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+            background: rgba(30, 41, 9, 0.096);
+            border: 0;
+            border-style: hidden;
+          }
 
+          .section-heading{
+            font-weight: bold;
+            background-image: linear-gradient(rgba(175, 186, 182, 0.527), rgba(204, 246, 237, 0.279),  rgba(215, 170, 190, 0.057) );
+            color: rgb(63, 90, 75);
+            
+          }
+       .caption-label{
+        font-size: 17px;
+        padding: 10px;
+        background-color: rgba(176, 217, 205, 0.151);
+        border-radius: 10px;
+        
+       
+    }
+    
 
 
     </style>
@@ -68,7 +84,7 @@
         </header>
         </div>
         <main>
-            <div style="padding-top: 100;">
+            <!-- <div style="padding-top: 100;">
             <h2 style="text-align:center;" class="titles">PREFERENCE WEAR</h2>
         <div class="captionz">[SWIFTUI <br> &nbsp;&nbsp;IOS APP] </div>  
         </div><br>[Making it easier for people with skin conditions, to find <br> affordable clothing
@@ -79,8 +95,8 @@
             
            <div style=" align-items: center; justify-content: center;  ">
             <div >
-                <!-- Preference Wear Looping View -->
-                <video autoplay muted loop height="500">
+                Preference Wear Looping View -->
+                <!-- <video autoplay muted loop height="500">
                     <source src="pw/pw_vid.mov" type="video/mp4">
                   </video>
                   </div>
@@ -89,19 +105,150 @@
            </div>
            </div>
             </div>
-        </div>
+        </div> --> 
 
 
-<!-- BOUND MUSIC APP -->
-<div style="padding-top: 100;"></div>
-    <h2 style="text-align:center;" class="titles">BOUND MUSIC</h2>
-        <div class="captionz">[FIGMA <br> &nbsp;&nbsp;APP DESIGN] </div>  
-    </div><br>[Music App Design.]<br><br>
-        <!-- Bound Music App Design -->
-        <div class="resume">
-            <img src="images/BoundMockup.png" width="850" height="750"></div>
-          
-        </main>
+        <div class="pads">
+        <table class="row process-body" border="1">
+    
+               <tr>
+                <div class="section-heading caption-label"><span style="font-weight:bold;">[FIGMA APP <br/>DESIGNS]</span></div>
+                <td>
+                    <img src="Bound/phone-4.png" height="420" >
+                   <div class="caption-label">MUSIC APP PROTOTYPE</div>
+                </td>
+                 
+               <td>
+                    <img src="Bound/phone-3.png" height="420">
+                </td>
+                <td>
+                    <img src="Bound/phone-2.png" height="420">
+                </td>               
+                <td>
+                    <img src="Bound/phone-1.png" height="420">
+                </td>                
+                <td>
+                    <img src="Bound/phone-5.png" height="420">
+                </td>                
+               </tr>
+            
+           
+      
+
+        </table>
+    </div>
+    <div class="pads">
+        <table class="row process-body" border="1">
+    
+               <tr>
+                <div class="section-heading caption-label" style="font-weight: bold;"><span style="color:black;">
+
+                [PHP <br/>PROJECTS]</span>
+                <br/>Click a project to <span style="color:black;">try it out</span><br/>
+                <br/>username: admin<br/>password: admin
+                </div>
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Project3/Project-3.php"><img src="php-images/banking.png" height="420" ></a>
+                   <div class="caption-label">
+                    Fake Banking System<br/>
+                    Using Sessions.
+
+                   </div>
+                </td>
+                 
+               <td>
+                 <a href="http://ggc900154128.altervista.org/Lab-10.php"><img src="php-images/cart.png" height="420" ></a>
+                 <div class="caption-label">
+                    Shopping Checkout System<br/>
+                    Using Sessions.
+
+                   </div>
+                </td>
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Lab-8.php"><img src="php-images/grade.png" height="420" ></a>
+                    <div class="caption-label">
+                        Grading Query System<br/>
+                        Using PHP sorting functions<br/>
+                        and MySQL Database.
+    
+                    </div>
+                </td>               
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Assignments/Lab-11.php"><img src="php-images/product.png" height="420" ></a>
+                    <div class="caption-label">
+                        Product Finder System<br/>
+                        Using MySQL Database and Statements.
+    
+                       </div>
+                </td>                
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Project-2.php"><img src="php-images/testing.png" height="420" ></a>
+                    <div class="caption-label">
+                        Test Taking and Storing Test Results In Textfile.<br/>
+                        Using Foreach Loop and HTML Table to Display Results.
+    
+                       </div>
+                </td>
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Project4/Project4.php"><img src="php-images/payment.png" height="420" ></a>
+                    <div class="caption-label">
+                        Store Employee Information In Database.<br/>
+                        Using SQL Statements To Display Employee Information.
+    
+                       </div>
+                </td>
+                <td>
+                    <a href="http://ggc900154128.altervista.org/Lab-9.php"><img src="php-images/sorting.png" height="420" ></a>
+                    <div class="caption-label">
+                       Read Information From Textfile<br/>
+                       Using Foreach Loop, HTML Table, and PHP Sorting Functions.
+    
+                       </div>
+                </td>                            
+               </tr>
+            
+           
+      
+
+        </table>
+    </div>
+
+    <div class="pads">
+        <table class="row process-body" border="1">
+    
+               <tr>
+                <div class="section-heading caption-label"><span style="font-weight:bold;">[SWIFT APP <br/>DEVELOPMENT]</span></div>
+                <td>
+                    <video autoplay muted loop height="500">
+                        <source src="pw/pw_vid.mov" type="video/mp4">
+                      </video>
+                   <div class="caption-label">
+                    <span style="font-weight: bold;">In Development</span><br/><br/>
+                    <span style="font-weight: bold;">PREFERENCE WEAR,<br/>
+                    A clothing  app.</span> <br>
+                    Making it easier to find certain<br/> fabrics while giving
+                    recommendations<br/> based on prices and quality.
+                
+                </div>
+                </td>
+                 
+               <td>
+                </td>
+                <!-- <td>
+                </td>               
+                <td>
+                </td>                
+                <td>
+                </td>                 -->
+               </tr>
+            
+           
+      
+
+        </table>
+    </div>
+
+
 
 
     </body>
