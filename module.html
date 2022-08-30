@@ -13,7 +13,6 @@
     body {
 
         height: 100%;
-        display: flex;
         overflow-x: hidden;
 
 
@@ -27,31 +26,79 @@
     .container{
         display: grid;
         grid-template-columns: auto;
+        margin-inline-end: 150px;
     }
+    .heading{
+        margin-top: 100px;
+    }
+    .box-1{
+        background-image: linear-gradient(rgba(237, 232, 232, 0.705), rgb(222, 222, 222), rgba(233, 233, 233, 0.417));
+        height: 500px;
+        width: 800px;
+    }
+    .section-align{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    section{
+        padding: 20px;
+    }
+   
+      
 </style>
 <body>
 
+
+
+      
+     
+    <h1 class="center heading"> Georgia Gwinnett College</h1>
+   
+
+
 <div class="center">
     <div class="container">
-        <div class="section-1">
-           
-
+        <h2 class="center"> English Major</h2>
+     <section class="section-align">
+        <div>
+            <img src="infographics/1.png" alt="" height="400" width="250">
+            
         </div>
-    
-    
-
-        <div class="section-1">
-           
-
+        <div class="box-1">
+            
         </div>
-        <div class="section-1">
-          
-
-        </div>
-    </div>
        
+     </section>
 
 
+     <h2 class="center"> English Minor</h2>
+
+     <section class="section-align">
+        <div>
+            <img src="infographics/2.png" alt="" height="400" width="250">
+            
+        </div>
+        <div class="box-1">
+            
+        </div>
+       
+     </section>
+
+
+     <h2 class="center"> Creative Writing Minor</h2>
+
+     <section class="section-align">
+        <div>
+            <img src="infographics/3.png" alt="" height="400" width="250">
+            
+        </div>
+        <div class="box-1">
+            
+        </div>
+       
+     </section>
+        
+    </div>
 </div>
     
 </body>

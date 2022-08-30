@@ -264,8 +264,8 @@ h1,a{
     padding: 10px;
 }
 
-/* #vid { /*background vid*/
-    /* z-index: -2;
+ #vid { /*background vid*/
+    z-index: -2;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -273,7 +273,7 @@ h1,a{
     min-height: 100%;
     opacity: 0.3;
   
-  } */
+  }
 
   .log{ /*logos*/
     padding: 5px;
