@@ -56,17 +56,48 @@
         right: 20%;
         
     }
+    
+
+    @keyframes bounce {
+        from { transform: translate3d(0, 0, 0);     }
+        to   { transform: translate3d(0, 10px, 0); }
+      }
+      
+      .arrow-bounce {
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        }
+      
 
    
       
 </style>
 <body>
 
+    <script>
+        window.onscroll = function(ev) {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                // you're at the bottom of the page
+                document.getElementById("arrow1").style.transform = "rotate(180deg)";
+                document.getElementById("arrow2").style.transform = "rotate(180deg)";
+                document.getElementById("arrow3").style.transform = "rotate(180deg)";
+                document.getElementById("arrow4").style.transform = "rotate(180deg)";
 
+            }
+            if ((window.innerHeight + window.scrollY) <= document.body.offsetHeight) {
+                // you're at the top of the page
+                document.getElementById("arrow1").style.transform = "rotate(0deg)";
+                document.getElementById("arrow2").style.transform = "rotate(0deg)";
+                document.getElementById("arrow3").style.transform = "rotate(0deg)";
+                document.getElementById("arrow4").style.transform = "rotate(0deg)";
 
+            }
+        };
+    </script>
       
-     
-    <h1 class="center heading"> Georgia Gwinnett College</h1>
+    <div style="opacity: 0.6; font-weight:bold; margin-top: 30px" class="center">Please Enter FullScreen To View Presentation!</div>
+    <h1 class="center heading">Georgia Gwinnett College</h1>
    
 
 
@@ -80,12 +111,13 @@
         </div>
         <div class="box-1">
 
-            <div class="arrow-position center">
-                <img src="infographics/downarrow.png" alt="" height="100" width="100">
-
+            <div class="arrow-position center arrow-bounce">
+                <img id="arrow1" src="infographics/downarrow.png" alt="" height="100" width="100">
+                <img id="arrow2" src="infographics/downarrow.png" alt="" height="100" width="100">
             </div>
-            <div class="arrow-position-2 center">
-                <img src="infographics/downarrow.png" alt="" height="100" width="100">
+            <div class="arrow-position-2 center arrow-bounce">
+                <img id="arrow3" src="infographics/downarrow.png" alt="" height="100" width="100">
+                <img id="arrow4" src="infographics/downarrow.png" alt="" height="100" width="100">
             </div>
         </div>
 
