@@ -4,6 +4,8 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Module 4</title>
 </head>
 <style>
@@ -126,6 +128,38 @@
   opacity: 0.4;
   margin: 3px;
 }
+.button{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 10px 10px 30px rgb(97, 132, 97);
+    background-image: conic-gradient( from 36deg at 25% 50%, rgb(116, 201, 116) 30% 25%, rgb(36, 35, 35) 0%);
+    cursor: pointer;
+}
+.button:hover .icon{
+    animation: slideDown 1s linear infinite;
+    filter: brightness(1.6);
+    scale: 1.1;
+
+    
+}
+
+@keyframes slideDown{
+    from{
+      translate: 0 -50px;
+      
+    } 
+    to{
+        translate: 0 50px;
+
+    }
+}
+a{
+    text-decoration: none;
+}
       
 </style>
 <body>
@@ -138,7 +172,6 @@
                 document.getElementById("arrow2").style.transform = "rotate(180deg)";
                 document.getElementById("arrow3").style.transform = "rotate(180deg)";
                 document.getElementById("arrow4").style.transform = "rotate(180deg)";
-
             }
             if ((window.innerHeight + window.scrollY) <= document.body.offsetHeight) {
                 // you're at the top of the page
@@ -153,9 +186,21 @@
    
     <div class="head-info">Made with HTML CSS & Javascript</div>
     <div style="opacity: 0.6; font-weight:bold; margin-top: 30px" class="center">
-        Please Enter FullScreen To View Presentation!
+        Please Enter Fullscreen To View Presentation!      
         
     </div>
+
+    <a href="infographics/module4.pptx" download>
+    <div class="center" style="padding: 20px;">
+        <button type="button" class="button center">
+                <i class="ri-file-download-line icon"></i>
+             Download PPT
+        </button> 
+    
+    </div>
+    </a>
+    
+
     <h1 class="center heading">Georgia Gwinnett College</h1>
 
     <div class="rotating"><img src="infographics/rocket.gif" alt="" height="300" width="300" class="rotating"></div>
@@ -192,7 +237,7 @@
 
      <h2 class="center"> English Minor</h2>
 
-     <section class="section-align">
+     <section  class="section-align">
         <div class="bouncing">
             <img src="infographics/2.png" alt="" height="400" width="250">
             
