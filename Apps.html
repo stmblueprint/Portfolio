@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="drawing.css">
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         
         .table-flow{
             overflow: hidden;
@@ -52,9 +55,21 @@
         right: 70px;
         bottom: -68px;
         rotate: 271deg;
+        animation: point alternate 1s infinite;
+
        
 
     }
+    @keyframes point{
+        form{
+           translate: -10px;
+        }
+        to{
+            translate: 20px;
+        }
+    }
+
+    
     .arrow2{
         position: absolute;
         right: -335px;
@@ -129,7 +144,16 @@
         <table class="row process-body" border="1">
     
                <tr>
-                <div class="section-heading caption-label"><span style="font-weight:bold;">[FIGMA DESIGN <br/>PROJECTS]</span></div>
+                <div class="section-heading caption-label"><span style="font-weight:bold;">[DESIGN <br/>PROJECTS]</span></div>
+                <td>
+                    <a href="https://www.tullochsportfolio.com/module/"><img src="images/ppt.png" height="420" ></a>
+                    <div class="caption-label">
+                        <b>Click Image to View.</b><br/>
+                       Javascript, HTML, CSS Powerpoint<br/>
+                        An animated web powerpoint.
+    
+                       </div>
+                </td>        
                 <td>
                     <img src="Bound/phone-4.png" height="420" >
                    <div class="caption-label">MUSIC APP PROTOTYPE</div>
@@ -139,7 +163,7 @@
                     <img src="Bound/phone-3.png" height="420">
                 </td>
                 <td>
-                    <img src="Bound/phone-2.png" height="420">
+                    <img id="sec" src="Bound/phone-2.png" height="420">
                 </td>               
                 <td>
                     <img src="Bound/phone-1.png" height="420">
@@ -147,19 +171,19 @@
                 <td>
                     <img src="Bound/phone-5.png" height="420">
                 </td>
-                <td>
+                <!-- <td>
                     <iframe src="pdf/CMS.pdf" width="420" height="480">
                     </iframe>
                     <div class="caption-label">COURSE MANAGEMENT SYSTEM<br>UI DESIGN</div>
-                </td>
-                <td>
+                </td> -->
+                <!-- <td>
                     <iframe src="pdf/chem-infographic.pdf" width="420" height="480">
                     </iframe>
                     <div class="caption-label">HOW CAN CHEMISTRY IMPROVE OUR LIVES<br>INFOGRAPHIC DESIGN</div>
-                </td>       
+                </td>        -->
               
                </tr>
-               <div class="arrow"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="120" width="120"></div>
+               <a href="#sec"><div class="arrow"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="120" width="120"></div></a>
 
         </table> 
 
