@@ -79,7 +79,7 @@
         bottom: 40%;
         rotate: 271deg;
         animation: point alternate 1s infinite;
-        filter: brightness(10);
+        opacity: 0.4;
 
 
     }
@@ -87,7 +87,8 @@
         right: 70px;
         bottom: -68px;
         animation: point-2 alternate 1s infinite;
-        filter: brightness(10);
+        opacity: 0.4;
+
 
 
     }
@@ -99,7 +100,8 @@
         bottom: 40%;
         rotate: 271deg;
         animation: point alternate 1s infinite;
-        filter: brightness(10);
+        opacity: 0.4;
+
 
     }
     .arrow-5{
@@ -109,23 +111,31 @@
         bottom: 40%;
         rotate: 271deg;
         animation: point alternate 1s infinite;
-        filter: brightness(10);
+        opacity: 0.4;
+
 
     }
     @keyframes point{
         from{
            translate: -10px;
+           scale: 1.0;
         }
         to{
             translate: 20px;
+            scale: 0.9;
         }
     }
     @keyframes point-2{
         from{
            translate: 0px -10px;
+           scale: 1.0;
+
         }
         to{
             translate: 0px 20px;
+            scale: 0.9;
+
+
         }
     }
 
