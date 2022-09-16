@@ -10,6 +10,11 @@
         html{
             scroll-behavior: smooth;
         }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         
         .table-flow{
             overflow: hidden;
@@ -38,8 +43,10 @@
 
           .section-heading{
             font-weight: bold;
-            background-image: linear-gradient(rgba(175, 186, 182, 0.527), rgba(204, 246, 237, 0.279),  rgba(215, 170, 190, 0.057) );
-            color: rgb(63, 90, 75);
+            background: white;
+            box-shadow: 5px 10px 20px black;
+            color:black;
+            opacity: 0.8;
             
           }
        .caption-label{
@@ -47,17 +54,62 @@
         padding: 10px;
         background-color: rgba(176, 217, 205, 0.151);
         border-radius: 10px;
-        
+
+    }
+    .caption-label:hover{
+        position: sticky;
+        z-index: 1;
+        scale: 1.08;
+        margin-left:20px;
+        background-image: linear-gradient(to right, rgb(133, 228, 228),rgb(184, 179, 179));
+        color: black;
+        box-shadow: 5px 5px 15px rgba(44, 158, 211, 0.685);
+        border-radius: 12px;
        
     }
+  
+
+    .design-container{
+        position: relative;
+     }
     .arrow{
         position: absolute;
-        right: 70px;
-        bottom: -68px;
+        z-index: 1;
+        right: 0%;
+        bottom: 40%;
         rotate: 271deg;
         animation: point alternate 1s infinite;
+        filter: brightness(10);
 
-       
+
+    }
+    .arrow-2{
+        right: 70px;
+        bottom: -68px;
+        animation: point-2 alternate 1s infinite;
+        filter: brightness(10);
+
+
+    }
+  
+    .arrow-4{
+        position: absolute;
+        z-index: 1;
+        right: 0%;
+        bottom: 40%;
+        rotate: 271deg;
+        animation: point alternate 1s infinite;
+        filter: brightness(10);
+
+    }
+    .arrow-5{
+        position: absolute;
+        z-index: 1;
+        right: 0%;
+        bottom: 40%;
+        rotate: 271deg;
+        animation: point alternate 1s infinite;
+        filter: brightness(10);
 
     }
     @keyframes point{
@@ -66,6 +118,14 @@
         }
         to{
             translate: 20px;
+        }
+    }
+    @keyframes point-2{
+        from{
+           translate: 0px -10px;
+        }
+        to{
+            translate: 0px 20px;
         }
     }
 
@@ -139,9 +199,59 @@
             </div>
         </div> --> 
 
+        <div class="pads design-container">
+            <table class="row process-body" >
+        
+                   <tr>
+                    <div class="section-heading caption-label"><span style="font-weight:bold;">[Full Stack <br/>Projects]</span></div>
+                    <td>
+                        <div class="center">
+                            <video autoplay muted loop height="500">
+                                <source src="pw/pw_vid.mov" type="video/mp4">
+                              </video>
+                        </div>
+                        
+                       <div class="caption-label">
+                        <span style="font-weight: bold;">In Development.</span><br/><br/>
+                        <span style="font-weight: bold;">PREFERENCE WEAR,<br/>
+                        A clothing  app.</span> <br>
+                        Making it easier to find certain<br/> fabrics during the different seasons of the
+                        year and giving
+                        recommendations<br/> based on prices and quality.
+                    
+                    </div>
+                    </td>
+                     
+                   <td>  
+                    <a href="https://www.woodnotefinery.com"><img src="images/woodnote.png" alt="" height="500"></a>
+                    <div class="caption-label">
+                        <span>Click the Image to <b><br/>join wait list!</b></span><br/>
+                        <span><b>E-commerce Website</b> for desktop & mobile</span>
 
-        <div class="pads">
-        <table class="row process-body" border="1">
+                    </div>
+
+                   </td>
+                    <!-- <td>
+                    </td>               
+                    <td>
+                    </td>                
+                    <td>
+                    </td>                 -->
+                   </tr>
+                
+               
+          
+    
+            </table>
+            <a><div class="arrow-4"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="80" width="80"></div></a>
+
+        </div>
+
+        <a href="#sec2"><div class="arrow-2"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="80" width="80"></div></a>
+
+        <section id="sec2">
+        <div class="pads design-container">
+        <table class="row process-body" >
     
                <tr>
                 <div class="section-heading caption-label"><span style="font-weight:bold;">[DESIGN <br/>PROJECTS]</span></div>
@@ -181,16 +291,21 @@
                     </iframe>
                     <div class="caption-label">HOW CAN CHEMISTRY IMPROVE OUR LIVES<br>INFOGRAPHIC DESIGN</div>
                 </td>        -->
-              
+
                </tr>
-               <a href="#sec"><div class="arrow"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="120" width="120"></div></a>
 
         </table> 
+        <a><div class="arrow"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="80" width="80"></div></a>
 
 
     </div>
-    <div class="pads">
-        <table class="row process-body" border="1">
+    </section>
+    <a href="#sec3"><div class="arrow-2"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="80" width="80"></div></a>
+
+
+    <section id="sec3">
+    <div class="pads design-container">
+        <table class="row process-body" >
     
                <tr>
                 <div class="section-heading caption-label" style="font-weight: bold;"><span style="color:black;">
@@ -260,45 +375,13 @@
             </tr>
     
         </table>
+        <a><div class="arrow-5"><img id="arrow-img" src="infographics/downarrow.png" alt="" height="80" width="80"></div></a>
 
     </div>        
 
+</section>
 
-
-    <div class="pads">
-        <table class="row process-body" border="1">
     
-               <tr>
-                <div class="section-heading caption-label"><span style="font-weight:bold;">[SWIFT APP <br/>DEVELOPMENT]</span></div>
-                <td>
-                    <video autoplay muted loop height="500">
-                        <source src="pw/pw_vid.mov" type="video/mp4">
-                      </video>
-                   <div class="caption-label">
-                    <span style="font-weight: bold;">In Development.</span><br/><br/>
-                    <span style="font-weight: bold;">PREFERENCE WEAR,<br/>
-                    A clothing  app.</span> <br>
-                    Making it easier to find certain<br/> fabrics while giving
-                    recommendations<br/> based on prices and quality.
-                
-                </div>
-                </td>
-                 
-               <td>
-                </td>
-                <!-- <td>
-                </td>               
-                <td>
-                </td>                
-                <td>
-                </td>                 -->
-               </tr>
-            
-           
-      
-
-        </table>
-    </div>
 
 
 
