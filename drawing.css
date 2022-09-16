@@ -30,6 +30,8 @@ body{
 
 nav{
     display: inline;
+    transition: all 0.6s ease-in-out;
+
 }
 
 .nav__format{
@@ -50,6 +52,8 @@ nav a:hover:not(.active){
     border-radius: 12px;
     font-weight: bold;
     font-size: larger;
+    transition: all 0.2s ease-in-out;
+
     
 }
 
