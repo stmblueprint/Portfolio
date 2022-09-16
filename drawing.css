@@ -21,6 +21,7 @@ body{
     padding: 100px;
     /* background-image: linear-gradient(to right, rgba(169, 208, 206, 0.813),rgba(197, 179, 188, 0.753)); */
     font-family: 'Courier New', Courier, monospace;
+    background-image: radial-gradient( rgb(190, 223, 212), rgba(149, 203, 185, 0.48), hwb(159 58% 14% / 0.528));
     
 }
 /* .h1__heading{
