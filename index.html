@@ -1,118 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="drawing.css">
-    <style>
-        .cla {
-            opacity: 0.4;
-        }
-    </style>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9794419662.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
 
-
-    <div class="process-heading cla">Not yet compatible with smart phones and tablets</div>
-    <title>Homepage|Portfolio</title>
+    <title>Aaron's Portfolio</title>
 </head>
 
+<style>
+
+</style>
 <body>
-    <!-- <video autoplay muted loop id="vid">
-        <source src="3D/bgvid.mp4" type="video/mp4">
-      </video> -->
-    <div>
-        <div style="float:right; display: flex; padding:0px">
 
-            <a href="https://github.com/stmblueprint" target="_blank" rel="noopener noreferrer"><img class="log"
-                    src="images/github.png" width="30"></a>
-            <a href="https://www.linkedin.com/in/aarontulloch/" target="_blank" rel="noopener noreferrer"><img
-                    class="log" src="images/linkedin.png" width="30"></a>
-            <a href="https://www.instagram.com/stmblueprint/" target="_blank" rel="noopener noreferrer"><img class="log"
-                    src="images/insta.png" width="30"></a>
-            <a href="https://discord.com/channels/@Zreb%E2%84%A2#0052" target="_blank" rel="noopener noreferrer"><img
-                    class="log" src="images/discord.png" width="30"></a>
-            <div>
-                <!-- <a href="pw/resume.pdf" target="_blank" rel="noopener noreferrer"><img class="log" src="images/res.jpg" style="border-radius: 100%;" width="25"></a>  -->
-                <!-- <div style="color: white;">Resume</div>      -->
-            </div>
+<!-- body div starts -->
+<div class="page-layers-container">
 
+
+<!-- top layer begins -->
+<div class="top-layer-container">
+
+
+<!-- nav menu -->
+<div class="header-container center title-heading">
+    <a href="#about"><span>About</span></a>
+    <a href="#projects"><span>Projects</span></a>
+    <a href="#resume"><span>Resume(s) and Certification(s)</span></a>
+    <a href="#contact"><span>Contact</span></a>
+</div>
+
+<!-- About -->
+<div class="label-container center" id="about">
+    <div class="section-label center title-heading">About Me</div>
+</div>
+<div class="about-container center">
+    <div class="about-section">
+        <div class="about-image">
+            <img src="assets/me.jpeg" alt="" width="180"  class="pfp">
         </div>
-
-
-        <div><img src="pw/me1.png" style="border-radius: 100%; filter:contrast(0.7)" width="90"></div>
-
-        <header>
-
-
-
-            <nav class="nav__format">
-                <a href="index">
-                    <h1 class="h1__heading">Aaron's Portfolio</h1>
-                </a>
-                <a href="about" name="about" value="write">About Me</a><br>
-                <a href="Apps">Apps</a><br>
-                <a href="developer">Logos</a><br>
-                <a href="extras">2D 3D</a>
-            </nav>
-        </header>
+        <div class="about-info" >
+            <div style="font-size: 25px;">I'm Aaron Tulloch, <br/>
+                <span class="auto-typed typed-strings"></span>
+            </div><br>
+            <div style="font-size: 20px;">
+                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+            </div>
+        </div>
     </div>
-    <main>
+   
+</div>
 
+<!-- projects -->
+<div class="label-container center" id="projects">
+    <div class="section-label center title-heading">Projects</div>
+</div>
+<div class="projects-container center">
 
-        <section class="sliding">
-            <div class="dj-slider">
-
-                <a href="Apps">
-                    <div class="dj-slide">
-
-                        <div style="filter: contrast(30%);"><img src="pw/pwvideo1.gif" width="250" height="250" /></div>
-                        <div
-                            style="position: absolute; top: 50%; bottom: 50%; right:50%; font-family:sans-serif; color: rgb(255, 197, 177);">
-                            APP'S</div>
-                </a>
-            </div>
-
-
-            <a href="developer">
-                <div class="dj-slide">
-                    <div style="filter: contrast(30%);"><img src="pw/lum.png" width="250" height="250" /></div>
-                    <div
-                        style="position: absolute; top: 50%; bottom: 50%;  right: 50%; font-family:sans-serif; font: lighter; color: rgb(248, 212, 188);">
-                        LOGO'S</div>
-            </a>
-            </div>
-
-            <div class="dj-slide">
-            </div>
-
-            <div class="dj-slide">
-            </div>
-
-            </div>
-        </section>
-
-
+    <div class="projects-position">
+        <div class="projects-display center">
+            <!-- img -->
+        <div class="project-image">
+            <a href="https://woodnotefinery.com" target="_blank"><img src="assets/woodnote.png" alt="" class="project-image"></a>
 
         </div>
+        <div style="font-size: 20px; padding:10px;" class="center">Woodnote Finery E-Commerce</div>
+        <ul>
+            <li>Printful API, Paypal API</li>
+            <li>PHP, Javascript, HTML, CSS</li>
+            <li>AWS Lightsail, MySQL</li>
+        </ul>
 
+        <!-- links -->
+        <div class="projects-link center">
 
-
-
-
-
-
-    </main>
-
-    <footer>
-        <div>
-
-
-
-
-
+            <a href="https://github.com/stmblueprint" target="_blank"><i class="fa-brands fa-github fa-custom-1 fa-custom-2 fa-custom-bg"></i></a>
+            <a href="https://woodnotefinery.com" target="_blank"><i class="fa-regular fa-arrow-up-right-from-square fa-custom-1 fa-custom-3 fa-custom-bg" ></i></a>
         </div>
-    </footer>
+        </div>
+    </div>
+
+    <div class="projects-position">
+        <div class="projects-display center">
+            <!-- img -->
+        <div class="project-image">
+            <a href="http://35.174.177.100" target="_blank"><img src="assets/retro-gaming.png" alt="" class="project-image"></a>
+
+            
+            
+        </div>
+        <div style="font-size: 20px; padding:10px;" class="center">Retro Gaming E-Commerce</div>
+        <ul>
+            <li>PHP, Javascript, HTML, CSS</li>
+            <li>AWS Lightsail, MySQL</li>
+            <li>Paypal API</li>
+        </ul>
+
+        <!-- links -->
+        <div class="projects-link center">
+
+            <a href="https://github.com/wross-wq/git-github.com-wross-wq-HCI-final-project" target="_blank"><i class="fa-brands fa-github fa-custom-1 fa-custom-2 fa-custom-bg"></i></a>
+            <a href="http://35.174.177.100" target="_blank"><i class="fa-regular fa-arrow-up-right-from-square fa-custom-1 fa-custom-3 fa-custom-bg" ></i></a>
+        </div>
+        </div>
+    </div>
+   
+</div>
+
+<!-- Resumes and Certifications -->
+<div class="label-container center" id="resume">
+    <div class="section-label center title-heading">Resume(s) & Certification(s)</div>
+</div>
+<div class="res-cert-container center">
+    <div class="res-cert-section ">
+
+        <div class="resume-container">
+           
+            <!-- first column -->
+            <div class="resume-style">
+                <div class="title-heading">Resume</div><br/>
+
+                Software Developer
+                    <div>
+                       <iframe src="assets/1664847743117-2.pdf" frameborder="0" height="200px" width="60%"></iframe><br/>
+                       <a href="assets/1664847743117-2.pdf" download>
+                          <i class="fa-regular fa-cloud-arrow-down fa-custom-1" ></i>
+                          Download Resume
+                       </a>
+                    </div>
+                
+
+
+                    <!-- Resume Title
+                    <div>
+                       <iframe src="assets/1664847743117-2.pdf" frameborder="0" height="200px" width="30%"></iframe><br/>
+                       <a href="assets/1664847743117-2.pdf" download>
+                          <i class="fa-regular fa-cloud-arrow-down fa-custom-1" ></i>
+                          Download Resume
+                       </a>
+                    </div> -->
+
+            </div>
+            </div>
+
+
+            <!-- second column -->
+            <div class="resume-container">
+           
+                <div class="resume-style">
+                    <div class="title-heading">Certification</div><br/>
+    
+                    PHP Certification
+                    <div>
+                       <iframe src="assets/php-cert.pdf" frameborder="0" height="200px" width="60%"></iframe><br/>
+                       <a href="assets/php-cert.pdf" download>
+                          <i class="fa-regular fa-cloud-arrow-down fa-custom-1" ></i>
+                          Download Certification
+                       </a>
+                    </div>
+    
+                </div>
+                </div>
+
+            
+            
+
+
+           
+            
+        </div>
+    </div>
+
+
+<!-- Contact -->
+<div class="label-container center" id="contact">
+    <div class="section-label title-heading">Contact</div>
+    <div class="contact-icons">
+        <a href="https://github.com/stmblueprint" target="_blank"><i class="fa-brands fa-github fa-custom-1 fa-custom-2"></i></a>
+        <a href="" target="_blank"><i class="fa-solid fa-phone fa-custom-1 fa-custom-3"></i></a>
+        <a href="" target="_blank"><i class="fa-solid fa-envelope fa-custom-1 fa-custom-4"></i></a>
+        <a href="https://www.linkedin.com/in/aarontulloch/" target="_blank"><i class="fa-brands fa-linkedin fa-custom-1 fa-custom-5"></i></a>
+    </div>
+</div>
+
+<form action="https://formsubmit.co/tullochaaron@yahoo.com" method="POST" style="margin: 50px;">
+
+    <!-- email subject -->
+    <input type="hidden" name="_subject" value="Porfolio Message">
+
+     <!-- <input type="text" value="" name="name" placeholder="Name" required><br/><br/> -->
+     <!-- change value to domain name/file -->
+     <input type="hidden" name="_next" value="https://tullochsportfolio.com/thankyou.html">
+     <input type="email" value="" name="email" placeholder="Email" required><br/><br/>
+     <textarea name="message" id="" cols="30" rows="5" placeholder="Message" required></textarea><br/>
+     <button type="submit" name="submit">Send &nbsp; &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+ </form>     
+
+
+ <!-- Footer -->
+<div class="footer-container">
+    <div class="footer-section">
+        <div class="footer-content-grid">
+
+            <!-- page sections -->
+            <div class="footer-links">
+                <a href="#about">About</a><br/>
+                <a href="#resume">Resumes & Certifications</a><br/>
+                <a href="#projects">Projects</a><br/>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- contact me links -->
+            <div class="footer-links">
+                <a href="#">Email</a><br/>
+                <a href="#">Phone</a><br/>
+                <a href="https://www.linkedin.com/in/aarontulloch/" target="_blank">LinkedIn</a><br/>
+                <a href="https://github.com/stmblueprint" target="_blank">Github</a><br/>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            &copy; Aaron Tulloch Portfolio 2023  | All Rights Reserved 
+        </div>
+    </div>
+</div>
+
+<!-- top layer ends -->
+</div>
+
+ <!-- mid layer overlay -->
+ <div class="mid-layer-container">
+    <div class="mid-layer-style"></div>
+
+
+<!-- mid layer ends -->
+</div>
+
+<!-- last layer -->
+<div class="last-layer-container-1">
+    <div class="last-layer-style"></div>
+
+
+<!-- last layer ends -->
+</div>
+
+<!-- last layer -->
+<div class="last-layer-container-2">
+    <div class="last-layer-style"></div>
+
+
+<!-- last layer ends -->
+</div>
+
+<!-- last layer -->
+<div class="last-layer-container-3">
+    <div class="last-layer-style"></div>
+
+
+<!-- last layer ends -->
+</div>
+
+<!-- last layer -->
+<!-- <div class="last-layer-container-4">
+    <div class="last-layer-style-2"></div>
+
+
+ last layer ends 
+ </div> --> 
+
+<!-- last layer -->
+<div class="last-layer-container-5">
+    <div class="last-layer-style-2"></div>
+
+
+<!-- last layer ends -->
+</div>
+<!-- last layer -->
+<div class="last-layer-container-6">
+    <div class="last-layer-style-2">
+    </div>
+
+
+<!-- last layer ends -->
+</div>
+
+<!-- body div ends -->
+
+</div>
+
+    
+<script>
+    var typed = new Typed(".auto-typed", {
+        strings: ["Full-Stack Developer.", "UI Designer.", "Digital Artist."],
+        typeSpeed: 150,
+        backSpeed: 150, 
+        loop: true
+    })
+</script>
 </body>
-
 </html>
