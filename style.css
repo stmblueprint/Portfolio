@@ -46,6 +46,7 @@ body{
 
 .about-container{
     position: relative;
+    z-index: -1;
     padding: 20px;
 }
 
@@ -89,6 +90,14 @@ body{
 }
 .label-container{
     padding-top: 30px;
+}
+.about-links{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+}
+.about-links > a > i{
+    font-size: 25px;
 }
 
 .projects-container{
@@ -449,3 +458,26 @@ a:hover{
   border: none;
   padding: 10px;
 }
+
+.about-stack > span > i, .about-stack > span{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 100px;
+  
+}
+/* .stack-img {
+ height: 70px;
+ width: 60px;
+ background-color: rgba(240, 248, 255, 0.462);
+ box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.212);
+ border-radius: 100px;
+ padding: 10px;
+}
+.about-stack > span > i{
+
+   background-color: rgba(240, 248, 255, 0.462);
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.212);
+   border-radius: 100px;
+  
+
+} */
