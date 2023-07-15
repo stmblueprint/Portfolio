@@ -420,6 +420,7 @@ a:hover{
 
 .title-heading{
     font-size: 20px;
+    font-weight: bold;
 }
 .typed-strings{
   font-size: 34px;
@@ -480,3 +481,11 @@ a:hover{
   
 
 } */
+
+.horizontal-divider{
+    background: -webkit-linear-gradient(120deg, rgb(252, 134, 0), rgb(0, 82, 69));
+    width: 20vw;
+    height: 2px;
+    margin: 20px;
+
+}
