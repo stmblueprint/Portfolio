@@ -193,7 +193,7 @@ body{
 .res-cert-section{
     position: relative;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     background: linear-gradient(90deg, rgba(176, 92, 88, 0.711) 0%, rgba(217, 217, 217, 0.405) 0.01%, rgba(66, 205, 180, 0.25) 100%);
     box-shadow: 14px 6px 20px 7px rgba(0, 0, 0, 0.11);
     width: 90vw;
