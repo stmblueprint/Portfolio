@@ -8,18 +8,49 @@ body{
     font-style: normal;
     font-weight: 500;
     scroll-behavior: smooth;
-    position: relative;
+    position: static;
+}
+.project-position-header{
+    display: grid;
+    grid-template-columns: auto;
+}
+.divider{
+    width: 80vw;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(164, 225, 214, 0.44) 0%, rgba(223, 195, 155, 0.682) 0.01%, rgba(137, 217, 204, 0.315) 100%);
+    opacity: 0.4;
+}
+.web-projects-preview-container img{
+    width: 30vw;
 }
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.header-container{
+.project-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .project-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+.project-header-layout{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 100px;
+    grid-template-columns: auto;
+}
+.icon-spacing {
+    margin-left: 100px; /* Adjust the value to set the desired space */
+}
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    gap: 10px;
     background: linear-gradient(90deg, rgba(164, 225, 214, 0.44) 0%, rgba(223, 195, 155, 0.682) 0.01%, rgba(137, 217, 204, 0.315) 100%);
     border-radius: 0px 0px 100px 100px;
     color: black;
@@ -87,6 +118,20 @@ body{
     backdrop-filter: blur(5px);
 
 }
+.project-category-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.project-category-container > div{
+    width: 40vw;
+}
+.project-category-thumbnail{
+    
+    width: 40vw;
+    border-radius: 12px;
+}
+
 .label-container{
     padding-top: 30px;
 }
@@ -147,7 +192,8 @@ body{
 
 .projects-position{
     /* margin: 10px; */
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .project-image{
     /* background-color: darkgray; */
@@ -173,10 +219,8 @@ body{
     opacity: 0.7;
     scale: 1.4;
 }
-.projects-link{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+.projects-link > div{
+    padding-bottom: 10px;
 }
 .pw-link-icon{
   padding-left: 20px;
@@ -213,6 +257,10 @@ input[type="text"], input[type="email"]{
     width: 50vw;
     height: 3vh;
     font-size: 20px;
+}
+.certs-position{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 button[type="submit"]{
     background-color: rgb(46, 46, 46);
@@ -296,15 +344,15 @@ a:hover{
     z-index: -100;
 
 }
-.mid-layer-style{
+/* .mid-layer-style{
     background: linear-gradient(90deg, rgba(66, 205, 180, 0.778) 0%, rgba(174, 232, 219, 0.682) 0.01%, rgba(66, 205, 180, 0.44) 100%);
-    height: 160rem;
+    height: 100vh;
     width: 100vw;
     opacity: 0.2;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     
-}
+} */
 .mid-layer-style-2{
     background: linear-gradient(90deg, rgba(66, 205, 180, 0.778) 0%, rgba(174, 232, 219, 0.682) 0.01%, rgba(66, 205, 180, 0.44) 100%);
     width: 100vw;
@@ -353,11 +401,11 @@ a:hover{
 
  
 }
+
 .last-layer-container-6{
     position: absolute;
     z-index: -2;
     right: 10%;
-    margin-top: 1100px;
 
  
 }
@@ -366,7 +414,7 @@ a:hover{
   width: 80px;
   
   border-radius: 100px;
-  background: #B05D58;
+    background: linear-gradient(90deg, rgba(164, 225, 214, 0.44) 0%, rgba(223, 195, 155, 0.682) 0.01%, rgba(137, 217, 204, 0.315) 100%);
   filter: blur(25px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -396,8 +444,7 @@ a:hover{
     color: rgb(132, 12, 172);
 }
 .fa-custom-3{
-    color: rgb(4, 157, 35);
-    
+    color: green;
 }
 .fa-custom-4{
     color: rgb(51, 88, 232);
@@ -405,6 +452,9 @@ a:hover{
 .fa-custom-5{
     color: rgb(26, 133, 178);
     
+}
+.fa-custom-6{
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fecb45);
 }
 .fa-custom-bg{
     background-color: rgb(240, 248, 255);
@@ -501,4 +551,138 @@ a:hover{
     height: 2px;
     margin: 20px;
 
+}
+
+.slideshow-container {
+    max-width: 70vw;
+    margin: auto;
+}
+
+
+.description-container {
+    max-width: 70vw; /* Adjust as needed */
+    margin: auto;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.slide {
+    margin: 10px;
+    display: none;
+    animation: fade 2s ease-in-out;
+}
+
+.design-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.design-section > div > img{ 
+    width: 40vw;
+    height: auto;
+    border-radius: 12px;
+}
+.logo-section > div > img {
+    width: 25vw;
+    height: auto;
+    border-radius: 12px;
+}
+.logo-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.logo-section > div, .design-section > div{
+    margin: 50px;
+}
+.website-status-container{
+    position: relative;
+}
+.website-status-container div:nth-child(2){
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-top: 15px;
+
+}
+.website-status-container div:nth-child(2) div{
+ margin-top: 2px;
+ animation: blink 6s infinite;
+
+}
+.website-status-container{
+   display: grid;
+   grid-template-columns: auto auto;
+   color: green;
+
+}
+@keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+.status-icon{
+    background-color: green;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.slide2 > img {
+ 
+    width: 50vw;
+    height: auto;
+    border-radius: 12px;
+}
+.projects-link{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+}
+.projects-link2{
+    position: absolute;
+    z-index: 1;
+    right: 30%;
+}
+.circle-icons {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+   
+}
+
+.circle-icon {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.circle-icon.active {
+    opacity: 0.2;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
