@@ -596,16 +596,16 @@ a:hover{
 .logo-section > div, .design-section > div{
     margin: 50px;
 }
-.website-status-container{
+.website-status-container, .website-status-container-2{
     position: relative;
 }
-.website-status-container div:nth-child(2){
+.website-status-container div:nth-child(2), .website-status-container-2 div:nth-child(2){
     display: grid;
     grid-template-columns: 50px auto;
     margin-top: 15px;
 
 }
-.website-status-container div:nth-child(2) div{
+.website-status-container div:nth-child(2) div, .website-status-container-2 div:nth-child(2) div{
  margin-top: 2px;
  animation: blink 6s infinite;
 
@@ -616,6 +616,13 @@ a:hover{
    color: green;
 
 }
+.website-status-container-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: red;
+ 
+ }
+
 @keyframes blink {
     0%, 50%, 100% {
       opacity: 1;
@@ -629,6 +636,13 @@ a:hover{
     border-radius: 100px;
     height: 10px;
     width: 10px;
+}
+.status-icon-2{
+    background-color: red;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+
 }
 .slide img {
     width: 100%;
@@ -684,3 +698,68 @@ a:hover{
         opacity: 1;
     }
 }
+
+
+
+#overlay {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: -10%;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+#slideshow-image{
+    width: 80vw;
+}
+#show-old-image-btn, #show-new-images-btn {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+}
+.preview-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 100px;
+   
+}
+#show-old-image, #show-new-images {
+
+    cursor: pointer;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+#show-new-images-title, #show-old-image-title{
+    position: absolute;
+    z-index: 1;
+    translate: -5px -55px;
+    background-color: rgba(0, 0, 0, 0.761);
+    font-size: 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #D6B337;
+}
+

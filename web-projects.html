@@ -143,6 +143,79 @@
 
             <div class="divider"></div>
 
+             <!-- project #3 -->
+
+             <div class="projects-position project-item" id="projects">
+
+                <div class="slideshow-container" id="slideshow1">
+
+                    <div style="width: 35vw;" class="project-header-layout center">
+
+                        <div class="website-status-container-2">
+                            <div class="custom-label-style">
+                                Retro Video Games | Website
+                            </div>
+                            <div>Offline &nbsp;<div class="status-icon-2"></div></div>
+                        </div>
+                       
+                        <div style="padding: 10px;" class="center">
+                            In a collaborative team project, we meticulously crafted the wireframe, prototype, and final designs through Figma, adhering to the best practices of Human-Computer Interaction. <br/><br/>
+                            Our adherence to tight deadlines was made possible through effective code collaboration on GitHub, enabling us to showcase our progress to the class. The website's development involved the utilization of PHP, HTML, CSS, JavaScript, and MySQL, with an AWS database endpoint seamlessly connecting the database to the website.<br/>
+
+                            Moreover, we seized the opportunity to gather valuable user feedback through in-person testing. This insightful feedback was thoughtfully implemented before the final presentation and deliverables deadline, ensuring a user-centric approach and a polished end product.
+                        </div>
+                    </div>
+
+                    <div class="projects-link2">
+                        <div>
+                            <a href="https://github.com/stmblueprint/git-github.com-wross-wq-HCI-final-project" target="_blank"><i
+                                    class="fa-brands fa-github fa-custom-1 fa-custom-2 fa-custom-bg"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-buttons">
+                        <div>
+                            <button id="show-old-image-btn" onclick="showOldImage()">
+                                <img src="assets/retro-gaming-1.png" id="show-old-image">
+                                <div class="" id="show-old-image-title">View Old Design</div>
+                            </button>
+                    
+                        </div>
+                      
+                        <div>
+                            <button id="show-new-images-btn" onclick="showNewImages()">
+                                <img src="assets/retrogaming-1.png" id="show-new-images">
+                                <div class="" id="show-new-images-title">View New Designs</div>
+                            </button>    
+                        </div>
+                    </div>
+                   
+            
+                    <div id="overlay">
+                        <div id="image-container">
+                            <span id="close-btn" onclick="hideImage()">&times;</span>
+                            <img id="slideshow-image" alt="Enlarged Image">
+                        </div>
+                    </div>
+            
+               
+                </div>
+
+                <div class="description-container">
+                    <ul class="description-ul">
+                        <li>
+                            <span> Language | Framework | Libraries: </span> PHP, JS, HTML, CSS, AWS, FontAwesome
+                        </li><br />
+                        <li><span>Database | Storage | API:</span> MySQL, AWS, PayPal API </li><br />
+                        <li><span>Other:</span> Version Control, Github, Figma</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+          
+
 
 
             <!-- Footer -->
@@ -266,6 +339,51 @@ last layer ends
                 observer.observe(item);
             });
         });
+
+
+        function showImage() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+    
+        function hideImage() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    
+        function showNewImages() {
+            const images = [
+                "assets/retro-gaming.png",
+                "assets/retrogaming-1.png",
+                "assets/retrogaming-3.png",
+                "assets/retrogaming-4.png",
+                "assets/retrogaming-5.png",
+                "assets/retrogaming-6.png",
+                "assets/retrogaming-7.png",
+                "assets/retrogaming-8.png",
+                "assets/retrogaming-9.png",
+                "assets/retrogaming-10.png",
+                "assets/retrogaming-11.png",
+                "assets/retrogaming-12.png"
+                // Add more images as needed
+            ];
+    
+            const imageContainer = document.getElementById("image-container");
+            const slideshowImage = document.getElementById("slideshow-image");
+    
+            images.forEach((image, index) => {
+                setTimeout(() => {
+                    slideshowImage.src = image;
+                    showImage();
+                }, index * 5500); // Change the delay as needed (milliseconds)
+            });
+        }
+    
+        function showOldImage() {
+            // Add your logic to show the old image
+            const oldImageSrc = "assets/retro-gaming-1.png";
+            const slideshowImage = document.getElementById("slideshow-image");
+            slideshowImage.src = oldImageSrc;
+            showImage();
+        }
 
     </script>
 </body>
