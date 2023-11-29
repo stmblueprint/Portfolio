@@ -763,3 +763,9 @@ a:hover{
     color: #D6B337;
 }
 
+
+.blog-preview{
+    background-color: gray;
+    width: 20vw;
+    border-radius: 12px;
+}
