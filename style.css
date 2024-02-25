@@ -126,6 +126,12 @@ body{
 .project-category-container > div{
     width: 40vw;
 }
+.project-category-container > a:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+
+}
+
 .project-category-thumbnail{
     
     width: 40vw;
