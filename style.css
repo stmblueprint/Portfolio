@@ -808,3 +808,8 @@ a:hover{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+.stack-container span{
+  padding-right: 10px;
+}
