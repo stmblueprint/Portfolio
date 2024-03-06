@@ -44,13 +44,121 @@
                 </div>
             </div>
 
+             <!-- project #0 -->
+
+             <div class="projects-position project-item" id="projects">
+
+                <div class="slideshow-container">
+
+                    <div style="width: 35vw;" class="project-header-layout center">
+                        <div class="custom-label-style">
+                            DesignDossier | iOS | Available in the App Store
+                        </div>
+                        <div class="center" style="padding: 10px;">
+                            Upload, organize, tag, and access visual inspiration effortlessly. Perfect for designers and artists. Keep your creative vault in your pocket!
+                        </div>
+                    </div>
+
+                    <div class="projects-link">
+                        <div>
+                            <a href="https://github.com/stmblueprint/DesignDossier" target="_blank"><i
+                                    class="fa-brands fa-github fa-custom-1 fa-custom-2 fa-custom-bg"></i></a>
+                        </div>
+
+                        <div>
+                            <a href="https://apps.apple.com/us/app/designdossier/id6477880772" target="_blank"><i
+                                    class="fa-regular fa-arrow-up-right-from-square fa-custom-1 fa-custom-3 fa-custom-bg"></i></a>
+                        </div>
+
+                    </div>
+                    
+                    <div class="image-container">
+                        
+                        <img id="selectedImage" class="selected-image" src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-1.png?updatedAt=1709743153349" 
+                            width="250" alt="Selected Image">
+                        <div class="loading-spinner" id="loadingSpinner"></div> <!-- Loading spinner -->
+
+                        <br>
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-1.png?updatedAt=1709743153349" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+                      
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-2.png?updatedAt=1709743172881" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+                      
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-3.png?updatedAt=1709743173833" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-4.png?updatedAt=1709743162763" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-5.png?updatedAt=1709743162711" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-6.png?updatedAt=1709743173585" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-7.png?updatedAt=1709743172558" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-8.png?updatedAt=1709743150871" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="https://ik.imagekit.io/jzgh1uqnq/design-dossier-9.png?updatedAt=1709743172010" width="50"
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+                      </div>
+                      
+                      <script>
+                        function displayImage(imageSrc) {
+                          var selectedImage = document.getElementById('selectedImage');
+                          selectedImage.src = imageSrc;
+                          var loadingSpinner = document.getElementById('loadingSpinner');
+                          loadingSpinner.style.display = 'block'; // Show loading spinner
+                          selectedImage.onload = function() {
+                                loadingSpinner.style.display = 'none'; // Hide loading spinner when image is loaded
+                            };
+                        }
+
+                      
+                      </script>
+                  
+                    
+
+                </div>
+
+                <div class="description-container">
+                    <ul class="description-ul">
+                        <li>
+                            <span> Language | Framework | Libraries: </span> Swift, SwiftUI, SF Symbols
+                        </li><br />
+                        <li><span>Database | Storage:</span> SwiftData (local storage/offline access)</li><br />
+                        <li><span>Architecture | Other:</span> MVVM, OOP</li><br />
+                        <li><span>Design | Softwares:</span> Figma, Xcode, Github</li>
+                    </ul>
+                </div>
+            </div>
+
+           
+
+            <div class="divider"></div>
+
+
+
             <!-- project #1 -->
 
             <div class="projects-position project-item" id="projects">
 
                 <div class="slideshow-container" id="slideshow1">
 
-                    <div style="width: 35vw;" class="project-header-layout center">
+                    <div style="width: 35vw;"  class="project-header-layout center">
                         <div class="custom-label-style">
                             Mindful Tasker | iPad & macOS
                         </div>
@@ -66,26 +174,42 @@
                         </div>
                     </div>
 
-                     <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-1.png?updatedAt=1701229098946" alt="Slide 1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-2.png?updatedAt=1701229106581" alt="Slide 2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-3.png?updatedAt=1701229113945" alt="Slide 3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-4.png?updatedAt=1701229111968" alt="Slide 4">
-                    </div>
-                  
+                    
+                   
 
-                    <div class="circle-icons">
-                        <div class="circle-icon" onclick="currentSlide(0, 1)"></div>
-                        <div class="circle-icon" onclick="currentSlide(1, 1)"></div>
-                        <div class="circle-icon" onclick="currentSlide(2, 1)"></div>
-                        <div class="circle-icon" onclick="currentSlide(3, 1)"></div>
+                    <div class="image-container">
+                        <img id="selectedImage2" class="selected-image2" src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-1.png?updatedAt=1701229098946"  
+                             alt="Selected Image">
+                            
+                        <div class="loading-spinner" id="loadingSpinner1"></div> <!-- Loading spinner -->
+
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-1.png?updatedAt=1701229098946" width="200"
+                        onclick="displayImage2(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-2.png" width="200"
+                        onclick="displayImage2(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-3.png" width="200"
+                        onclick="displayImage2(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/mindfultasker-4.png" width="200"
+                        onclick="displayImage2(this.src)" 
+                        alt="Slide 2">
+
                     </div>
+
+
+                    <script>
+                        function displayImage2(imageSrc) {
+                          var selectedImage = document.getElementById('selectedImage2');
+                          selectedImage.src = imageSrc;
+                          var loadingSpinner = document.getElementById('loadingSpinner1');
+                          loadingSpinner.style.display = 'block'; // Show loading spinner
+                          selectedImage.onload = function() {
+                                loadingSpinner.style.display = 'none'; // Hide loading spinner when image is loaded
+                            };
+                        }
+                      </script>
 
                 </div>
 
@@ -110,7 +234,7 @@
 
                     <div style="width: 35vw;" class="project-header-layout center">
                         <div class="custom-label-style">
-                            Preference Wear | iOS
+                            Preference Wear | iOS | Currently in Beta
                         </div>
                         <div class="center" style="padding: 10px;">
                             Preference Wear speeds up the process of finding skin-friendly clothing from your
@@ -131,31 +255,45 @@
 
                     </div>
                     
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-1.png?updatedAt=1701220156909" alt="Slide 1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-2.png?updatedAt=1701220155565" alt="Slide 2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-3.png?updatedAt=1701220155867" alt="Slide 3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-4.png?updatedAt=1701220153800" alt="Slide 4">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-5.png?updatedAt=1701219952430" alt="Slide 4">
-                    </div>
+                   
                   
+                    <div class="image-container">
+                        <img id="selectedImage3" class="selected-image2" src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-1.png"  
+                             alt="Selected Image">
+                        <div class="loading-spinner" id="loadingSpinner2"></div> <!-- Loading spinner -->
+
+                        <br>
+
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-1.png" width="200"
+                        onclick="displayImage3(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-2.png" width="200"
+                        onclick="displayImage3(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-3.png" width="200"
+                        onclick="displayImage3(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/Preferencewear-4.png" width="200"
+                        onclick="displayImage3(this.src)" 
+                        alt="Slide 2">
+
+                    </div>
+
+
+                    <script>
+                        function displayImage3(imageSrc) {
+                          var selectedImage = document.getElementById('selectedImage3');
+                          selectedImage.src = imageSrc;
+                          var loadingSpinner = document.getElementById('loadingSpinner2');
+                          loadingSpinner.style.display = 'block'; // Show loading spinner
+                          selectedImage.onload = function() {
+                                loadingSpinner.style.display = 'none'; // Hide loading spinner when image is loaded
+                            };
+                        }
+                      </script>
                    
 
-                    <div class="circle-icons">
-                        <div class="circle-icon" onclick="currentSlide(0, 2)"></div>
-                        <div class="circle-icon" onclick="currentSlide(1, 2)"></div>
-                        <div class="circle-icon" onclick="currentSlide(2, 2)"></div>
-                        <div class="circle-icon" onclick="currentSlide(3, 2)"></div>
-                        <div class="circle-icon" onclick="currentSlide(4, 2)"></div>
-                    </div>
+                   
 
                 </div>
 
@@ -197,19 +335,36 @@
                         </div>
                     </div>
 
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/DessertFinder-1.png?updatedAt=1701229118306" alt="Slide 1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://ik.imagekit.io/jzgh1uqnq/DessertFinder-2.png?updatedAt=1701229118032" alt="Slide 2">
+                  
+
+
+                    <div class="image-container">
+                        <img id="selectedImage4" class="selected-image2" src="https://ik.imagekit.io/jzgh1uqnq/DessertFinder-1.png?updatedAt=1701229118306"  
+                             alt="Selected Image">
+                        <div class="loading-spinner" id="loadingSpinner3"></div> <!-- Loading spinner -->
+                        <br>
+
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/DessertFinder-1.png?updatedAt=1701229118306" width="200"
+                        onclick="displayImage4(this.src)" 
+                        alt="Slide 2">
+                        <img src="https://ik.imagekit.io/jzgh1uqnq/DessertFinder-2.png" width="200"
+                        onclick="displayImage4(this.src)" 
+                        alt="Slide 2">
+                        
                     </div>
 
 
-                    <div class="circle-icons">
-                        <div class="circle-icon" onclick="currentSlide(0, 3)"></div>
-                        <div class="circle-icon" onclick="currentSlide(1, 3)"></div>
-                    </div>
-
+                    <script>
+                        function displayImage4(imageSrc) {
+                          var selectedImage = document.getElementById('selectedImage4');
+                          selectedImage.src = imageSrc;
+                          var loadingSpinner = document.getElementById('loadingSpinner3');
+                          loadingSpinner.style.display = 'block'; // Show loading spinner
+                          selectedImage.onload = function() {
+                                loadingSpinner.style.display = 'none'; // Hide loading spinner when image is loaded
+                            };
+                        }
+                      </script>
                 </div>
 
                 <div class="description-container">

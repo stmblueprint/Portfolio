@@ -158,44 +158,95 @@
                             <div>Offline &nbsp;<div class="status-icon-2"></div></div>
                         </div>
                        
-                        <div style="padding: 10px;" class="center">
+                        <!-- <div style="padding: 10px;" class="center">
                             In a collaborative team project, we meticulously crafted the wireframe, prototype, and final designs through Figma, adhering to the best practices of Human-Computer Interaction. <br/><br/>
                             Our adherence to tight deadlines was made possible through effective code collaboration on GitHub, enabling us to showcase our progress to the class. The website's development involved the utilization of PHP, HTML, CSS, JavaScript, and MySQL, with an AWS database endpoint seamlessly connecting the database to the website.<br/><br/>
                             Moreover, we seized the opportunity to gather valuable user feedback through in-person testing. This insightful feedback was thoughtfully implemented before the final presentation and deliverables deadline, ensuring a user-centric approach and a polished end product.
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="projects-link2">
+                    <div class="projects-link">
                         <div>
                             <a href="https://github.com/stmblueprint/git-github.com-wross-wq-HCI-final-project" target="_blank"><i
                                     class="fa-brands fa-github fa-custom-1 fa-custom-2 fa-custom-bg"></i></a>
                         </div>
                     </div>
-                    
-                    <div class="preview-buttons">
-                        <div>
-                            <button id="show-old-image-btn" onclick="showOldImage()">
-                                <img src="assets/retro-gaming-1.png" id="show-old-image">
-                                <div class="" id="show-old-image-title">View Old Design</div>
-                            </button>
-                    
-                        </div>
+                   
+                    <div class="image-container ">
+                        
+                        <img id="selectedImage" class="selected-image2" src="assets/retro-gaming.png"  alt="Selected Image">
+                        <div class="loading-spinner" id="loadingSpinner"></div> <!-- Loading spinner -->
+
+                        <br>
+                        <div class="thmbnail-imgs">
+                              <img src="assets/retro-gaming.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
                       
-                        <div>
-                            <button id="show-new-images-btn" onclick="showNewImages()">
-                                <img src="assets/retrogaming-1.png" id="show-new-images">
-                                <div class="" id="show-new-images-title">View New Designs</div>
-                            </button>    
-                        </div>
-                    </div>
+                              <img src="assets/retrogaming-1.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-3.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-4.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-5.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-6.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-7.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-8.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-9.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-10.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+                      
+                              <img src="assets/retrogaming-11.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+
+                              <img src="assets/retrogaming-12.png" 
+                              onclick="displayImage(this.src)" 
+                              alt="Slide 1">
+                              
+                      </div>
+                      </div>
+                      
+                      <script>
+                        function displayImage(imageSrc) {
+                          var selectedImage = document.getElementById('selectedImage');
+                          selectedImage.src = imageSrc;
+                          var loadingSpinner = document.getElementById('loadingSpinner');
+                          loadingSpinner.style.display = 'block'; // Show loading spinner
+                          selectedImage.onload = function() {
+                                loadingSpinner.style.display = 'none'; // Hide loading spinner when image is loaded
+                            };
+                        }
+
+                      
+                      </script>
+                  
                    
             
-                    <div id="overlay">
-                        <div id="image-container">
-                            <span id="close-btn" onclick="hideImage()">&times;</span>
-                            <img id="slideshow-image" alt="Enlarged Image">
-                        </div>
-                    </div>
+                    
             
                
                 </div>
