@@ -566,9 +566,9 @@ a:hover{
 
 
 .description-container {
-    max-width: 70vw; /* Adjust as needed */
+    max-width: 70vw; 
     margin: auto;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px; 
 }
 
 .slide {
@@ -584,8 +584,7 @@ a:hover{
     justify-content: center;
 }
 .design-section > div > img{ 
-    width: 40vw;
-    height: auto;
+    width: 40vh;
     border-radius: 12px;
 }
 .logo-section > div > img {
@@ -813,3 +812,7 @@ a:hover{
 .stack-container span{
   padding-right: 10px;
 }
+
+
+
+
